@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListViewCat_Pro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#DC1433"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LISTADO DE PRODUCTOS CATEGORIAS"
+            android:fontFamily="serif-monospace"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/BuscarVista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mycolor1"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false"
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ViewPer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/mycolor1"
+        android:elevation="4dp"
+        android:text="Copiright (c) ITCA-FEPADE. \nManuel Alvarado - Jenni Surio"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
